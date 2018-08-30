@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:4x4x4CubeMax7219-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -474,27 +475,14 @@ Wire Wire Line
 	9050 1900 9000 1900
 Connection ~ 9000 1900
 Wire Wire Line
-	6900 3550 7000 3550
-Wire Wire Line
-	7000 3550 7000 2600
-Wire Wire Line
 	7000 2600 6900 2600
 Connection ~ 6900 2600
-Wire Wire Line
-	7700 3550 7700 2650
 Wire Wire Line
 	7700 2650 7600 2650
 Connection ~ 7600 2650
 Wire Wire Line
-	8400 3550 8400 2700
-Wire Wire Line
 	8400 2700 8300 2700
 Connection ~ 8300 2700
-Wire Wire Line
-	9100 3550 9100 2450
-Wire Wire Line
-	9100 2450 9000 2450
-Connection ~ 9000 2450
 Wire Wire Line
 	8700 3000 8700 3150
 Wire Wire Line
@@ -561,10 +549,6 @@ Wire Wire Line
 	2900 3150 6600 3150
 Wire Wire Line
 	6900 5200 6950 5200
-Wire Wire Line
-	6950 5200 6950 4100
-Wire Wire Line
-	6950 4100 6900 4100
 Wire Wire Line
 	7600 5200 7650 5200
 Wire Wire Line
@@ -660,20 +644,6 @@ Wire Wire Line
 	6600 5200 6600 5400
 Connection ~ 6600 5400
 Wire Wire Line
-	6950 4100 7000 4100
-Wire Wire Line
-	7000 4100 7000 3550
-Connection ~ 6950 4100
-Wire Wire Line
-	7650 4100 7650 3550
-Connection ~ 7650 4100
-Wire Wire Line
-	8350 4100 8350 3550
-Connection ~ 8350 4100
-Wire Wire Line
-	9050 4100 9050 3550
-Connection ~ 9050 4100
-Wire Wire Line
 	3000 3950 2850 3950
 Wire Wire Line
 	2850 3950 2850 5100
@@ -693,22 +663,6 @@ Wire Wire Line
 	4550 5150 4550 5400
 Wire Wire Line
 	4550 5400 6600 5400
-Connection ~ 9050 3550
-Wire Wire Line
-	9050 3550 9100 3550
-Wire Wire Line
-	9000 3550 9050 3550
-Connection ~ 8350 3550
-Connection ~ 7650 3550
-Wire Wire Line
-	7650 3550 7700 3550
-Wire Wire Line
-	7600 3550 7650 3550
-Connection ~ 7000 3550
-Wire Wire Line
-	8350 3550 8400 3550
-Wire Wire Line
-	8300 3550 8350 3550
 Wire Notes Line
 	9200 3800 6450 3800
 Wire Notes Line
@@ -765,7 +719,7 @@ L Device:R R1
 U 1 1 5B93A041
 P 4300 4800
 F 0 "R1" H 4370 4846 50  0000 L CNN
-F 1 "R9.53k" H 4370 4755 50  0000 L CNN
+F 1 "R9k53" H 4370 4755 50  0000 L CNN
 F 2 "" V 4230 4800 50  0001 C CNN
 F 3 "~" H 4300 4800 50  0001 C CNN
 	1    4300 4800
@@ -790,4 +744,59 @@ Text Notes 4950 5900 0    50   ~ 0
 Layer 4 connects to pins 5,8
 Text Notes 4700 3800 0    50   ~ 0
 Anodes for each "segment" are\nconnected in 3-dimensions using\ntheir anodes as columns with a\ncommon cathode arrangement for\neach "digit".
+Wire Wire Line
+	6950 5200 6950 4100
+Wire Wire Line
+	6950 4100 6900 4100
+Wire Wire Line
+	6950 4100 6950 3000
+Connection ~ 6950 4100
+Connection ~ 6950 3000
+Wire Wire Line
+	7650 4100 7650 3000
+Connection ~ 7650 4100
+Connection ~ 7650 3000
+Wire Wire Line
+	8350 4100 8350 3000
+Connection ~ 8350 4100
+Connection ~ 8350 3000
+Wire Wire Line
+	9050 4100 9050 3000
+Connection ~ 9050 4100
+Connection ~ 9050 3000
+Wire Wire Line
+	7000 4650 7000 3550
+Wire Wire Line
+	7000 3550 6900 3550
+Connection ~ 7000 4650
+Wire Wire Line
+	7700 4650 7700 3550
+Wire Wire Line
+	7700 3550 7600 3550
+Connection ~ 7700 4650
+Wire Wire Line
+	8400 4650 8400 3550
+Wire Wire Line
+	8400 3550 8300 3550
+Connection ~ 8400 4650
+Wire Wire Line
+	9100 4650 9100 3550
+Wire Wire Line
+	9100 3550 9000 3550
+Connection ~ 9100 4650
+Wire Wire Line
+	7000 3550 7000 2600
+Connection ~ 7000 3550
+Wire Wire Line
+	7700 3550 7700 2650
+Connection ~ 7700 3550
+Wire Wire Line
+	8400 3550 8400 2700
+Connection ~ 8400 3550
+Wire Wire Line
+	9000 2450 9100 2450
+Wire Wire Line
+	9100 2450 9100 3550
+Connection ~ 9000 2450
+Connection ~ 9100 3550
 $EndSCHEMATC
